@@ -285,7 +285,7 @@ open class FPNTextField: UITextField, FPNCountryPickerDelegate, FPNDelegate {
 
 	// Private
 
-	@objc public func didEditText() {
+	@objc open func didEditText() {
 		if let phoneCode = selectedCountry?.phoneCode, let number = text {
 			var cleanedPhoneNumber = clean(string: "\(phoneCode) \(number)")
 
