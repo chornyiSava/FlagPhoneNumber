@@ -53,6 +53,7 @@ public enum FPNCountryCode: String {
 	case KM = "KM"
 	case CG = "CG"
 	case CD = "CD"
+    case DF = "DF"
 	case KP = "KP"
 	case KR = "KR"
 	case CR = "CR"
