@@ -29,7 +29,7 @@ open class FPNTextField: UITextField, FPNCountryPickerDelegate, FPNDelegate {
 		let width = flagSize.width + flagButtonEdgeInsets.left + flagButtonEdgeInsets.right + phoneCodeTextField.frame.width
 		let height = bounds.height
 
-		return CGSize(width: width, height: height)
+		return CGSize(width: width + 5.0, height: height)
 	}
 
 	private var phoneCodeTextField: UITextField = UITextField()
