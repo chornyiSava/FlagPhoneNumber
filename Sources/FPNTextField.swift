@@ -303,7 +303,11 @@ open class FPNTextField: UITextField, FPNCountryPickerDelegate, FPNDelegate {
 
 				if let dialCode = selectedCountry?.phoneCode {
 					if let inputString = formatter?.inputString(cleanedPhoneNumber) {
-						text = remove(dialCode: dialCode, in: inputString)
+                        if let newText = text {
+                            if newText.contains(dialCode) {
+                                text = remove(dialCode: dialCode, in: inputString)
+                            }
+                        }
 					}
 				}
 				(delegate as? FPNTextFieldDelegate)?.fpnDidValidatePhoneNumber(textField: self, isValid: false)
