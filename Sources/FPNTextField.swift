@@ -156,7 +156,7 @@ open class FPNTextField: UITextField, FPNCountryPickerDelegate, FPNDelegate {
 		let leftViewFrame: CGRect = leftView?.frame ?? .zero
 		let width: CGFloat = min(bounds.size.width, leftViewSize.width)
 		let height: CGFloat = min(bounds.size.height, leftViewSize.height)
-		let newRect: CGRect = CGRect(x: leftViewFrame.minX, y: leftViewFrame.minY, width: width, height: height)
+		let newRect: CGRect = CGRect(x: 0, y: 0, width: width, height: height)
 
 		leftView?.frame = newRect
 	}
